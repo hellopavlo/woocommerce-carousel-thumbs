@@ -150,7 +150,7 @@ final class PWP_Carousel_Thumbs {
 	 *
 	 * @return array
 	 */
-	protected function change_gallery_class( $classes ) {
+	public function change_gallery_class( $classes ) {
 		$key = array_search( 'woocommerce-product-gallery', $classes );
 		if ( is_numeric( $key ) ) {
 			$classes[ $key ] = 'woocommerce-product-gallery-thumbs';
