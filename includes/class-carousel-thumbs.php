@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Main PWP_Carousel_Thumbs Class.
  *
  * @class PWP_Carousel_Thumbs
- * @version	1.0.0
+ * @version	1.0.1
  */
 final class PWP_Carousel_Thumbs {
 
@@ -24,7 +24,7 @@ final class PWP_Carousel_Thumbs {
 	 *
 	 * @var string
 	 */
-	public $version = '1.0.0';
+	public $version = '1.0.1';
 
 	/**
 	 * The single instance of the class.
@@ -97,6 +97,7 @@ final class PWP_Carousel_Thumbs {
 	 */
 	public function enqueue_styles() {
 		wp_register_style( 'flexslider', $this->plugin_url() . '/assets/css/flexslider.css', array(), $this->version );
+		wp_register_style( 'woocommerce-carousel-thumbs', $this->plugin_url() . '/assets/css/woocommerce-carousel-thumbs.css', array(), $this->version );
 	}
 
 	/**
@@ -139,7 +140,9 @@ final class PWP_Carousel_Thumbs {
 	 */
 	public function show_product_images() {
 		wp_enqueue_style( 'flexslider' );
+		wp_enqueue_style( 'woocommerce-carousel-thumbs' );
 		wp_enqueue_script( 'woocommerce-carousel-thumbs' );
+
 		include $this->plugin_path() . '/templates/product-images.php';
 	}
 

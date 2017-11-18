@@ -4,14 +4,14 @@
  *
  * @author  PavloWP
  * @package PWP_Carousel_Thumbs
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 } ?>
 
-<div class="cthbs-product-gallery-container" style="float: left; width: 48%;">
+<div class="cthbs-product-gallery-container">
 	<div class="slider flexslider">
 		<?php woocommerce_show_product_images(); ?>
 	</div>

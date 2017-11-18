@@ -3,7 +3,7 @@
  * Plugin Name: Carousel Slider Thumbs for WooCommerce
  * Plugin URI: https://pavlowp.com/woocommerce-carousel-slider-thumbs
  * Description: Adds carousel slider functionality to WooCommerce single product thumbnails.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: PavloWP
  * Author URI: https://pavlowp.com
  * Requires at least: 4.4

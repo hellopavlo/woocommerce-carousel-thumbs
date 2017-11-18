@@ -1,4 +1,17 @@
 .cthbs-product-gallery-container {
-	float: right;
+	float: left;
 	width: 48%;
+}
+
+.woocommerce-product-gallery__trigger {
+	transition-property: none;
+	top: 15px;
+	left: 15px;
+}
+
+@media screen and ( max-width: 768px ) {
+	.cthbs-product-gallery-container {
+		float: none;
+		width: 100%;
+	}
 }
